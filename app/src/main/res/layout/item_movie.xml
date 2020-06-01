@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.sun_asterisk.clean_architecture_sample2.domain.model.Movie" />
+    </data>
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:padding="@dimen/dp_8"
+        app:bindImage="@{movie.movieBackdropPath}"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+</layout>
